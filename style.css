@@ -1,0 +1,126 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F7EFE5;
+    color: #111;
+}
+
+.main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    align-items: center;
+
+}
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0,0,0, .5);
+}
+.title {
+    max-width: 35%;
+}
+.title h4 {
+    font-size: 1.5rem;
+    color: #19A7CE;
+}
+.title p {
+    letter-spacing: 1px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+.content p{
+    color: #19A7CE;
+    font-weight: bold;
+}
+.field {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #dfdedc;
+    font-size: 1rem;    
+    transition: .3s all;
+}
+.field:hover {
+    background-color: #cbc8c4 ;
+}
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.option .check {
+    text-align: center;
+}
+.errormsg {
+    padding-block: .3rem;
+    text-align: center;
+    color: #19A7CE;
+    font-size: 1em;
+}
+#result {
+    text-align: center;
+}
+#mySelect {
+    padding: .3rem;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    background-color: #3dafce;
+}
+.op {
+    padding: .3rem;
+}
+.calcu {
+    padding: .5rem 1rem;
+    outline: none;
+    background-color: #3dafce;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1.05em;
+    cursor: pointer;
+    transition: .3s all ;
+}
+.calcu:hover {
+    background-color: #60c8e5;
+}
+
+@media (max-width:880px ) {
+    .wrapper {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+}
+@media (max-width:611px ) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+    }
+    .title {
+        max-width: 100%;
+        text-align: center;
+    }
+    .field {
+        padding: .5rem 1.5rem;
+    }
+}
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class= "main">
+
+        <div class="wrapper">
+            <div class="title">
+                <h4> Simple Interest Calculator</h4>
+                <p> Please input all the requirements to compute for the interest.</p>
+            </div>
+            <div class="content">
+                <p>Principal Value: </p>
+                <input type="number" id="prin-value" class="field" placeholder="Principal Value" required>
+                <p>Interest Rate:</p>
+                <input type="number" id="rate" class="field" placeholder="Interest Rate" required>
+                <p>Time: </p>
+                <input type="number" class="field" id="time" placeholder="Time" required>
+                <div class="option">
+                   
+                    <label for="mySelect">Choose a type:</label>
+                    <select id="mySelect" name="time">
+                    <option value="days" class="op">Days</option>
+                    <option value="months" class="op">Months</option>
+                    <option value="years" class="op">Years</option>
+                    </select>
+
+                  
+                </div>
+                <p class="errormsg" id="errormsg"> </p>
+                <button class="calcu" id="calcu"> Calculate</button>
+                <p>Result:</p>
+                <input type="number" placeholder="Result" class="field" id="result" readonly>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
